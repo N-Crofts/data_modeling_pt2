@@ -179,10 +179,37 @@ const user = {                              const order = {
     passWord: String,                               cafeName: String,
     curentLocation: String,                         cafeLocation: String,
     nearbyCoffee: [],                               cafeItems: [],
-    shoppingCart: [],                               orderTotal: String
+    shoppingCart: [],                               orderTotal: Number
     orderHistory: []                               
                                                     
 }                                           }
+
+
+const exampleUser = {
+    id: 222,
+    name: "Nick",
+    passWord: "coffeeIsLyfe",
+    currentLocation: "West Midtown, Atl, GA",
+    nearbyCoffee: [{
+        cafeOne: "Starbucks",
+        cafeTwo: "The Octane",
+        cafeThree: "Hipster Lipsum"
+    }],
+    shoppingCart: [{
+        cafe: "The Octane",
+        item: "Iced Vanilla Latte"
+    }],
+    orderHistory: [{
+        orderOne: [{
+            id: 333,
+            orderDate: "2-22-18",
+            cafeName: "Starbucks",
+            cafeLocation: "West Midtown, Atl, GA",
+            cafeItems: "Grande Cappuccino",
+            orderTotal: 5.99
+        }]
+    }]
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -203,10 +230,37 @@ const user = {                              const team = {
     name: String,                                   sport: String, 
     passWord: String,                               teamName: String,
     favTems: [],                                    teamRoster: [],
-    favoriteBands: [],                              teamSchedule: []
-    upcomingGames: []
+    upcomingGames: []                               teamSchedule: []
                                                     
 }                                           }
+
+
+const exampleUser = {
+    id: 222,
+    name: "Johnny Quarterback",
+    password: "pigSkin4Lyfe",
+    favTeams: [{
+        favTeamOne: [{
+            id: 999,
+            sport: "College Football",
+            teamName: "The Punishing Poindexters",
+            teamRoster: [{
+                playerOne: "John Doe",
+                playerTwo: "etc.",
+                playerThree: "etc.",
+                playerFour: "etc."
+            }],
+            teamShedule: [{
+                gameOne: "9-25-18, Poindexter Arena",
+                gameTwo: "10-01-18, The Octagon"
+            }]
+        }]
+    }],
+    upcomingGames: [{
+        gameOne: "9-25-18, Poindexter Arena",
+        gameTwo: "10-01-18, The Octagon"
+    }]
+}
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -214,6 +268,6 @@ const user = {                              const team = {
 
 FINAL THOUGHTS
 
-// Q. When you were creating relationships between the models, what were some thoughts or questions you had to help guide a connection between them?
+Q. When you were creating relationships between the models, what were some thoughts or questions you had to help guide a connection between them?
 
-// A. I had to stop and consider the info required for each array of objects, and the importance of detailed info needed to properly navigate each callback.
+A. I had to stop and consider the info required for each array of objects, and the importance of detailed info needed to properly navigate each callback.
